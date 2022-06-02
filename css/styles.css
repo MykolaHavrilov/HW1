@@ -63,15 +63,6 @@
 
 /* main - header */
 
-/* .site-nav {
-    display: inline-block;
-    vertical-align: sub;
-}
-.site-nav .li {
-    padding: 0;
-    list-style: none;
-} */
-
 .site-nav .link {
     color: var(--title-text-color);
 }
@@ -124,6 +115,7 @@ background: var(--hero-background-color);
     background: var(--accrnt-color);
     border: none;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .button:hover,
@@ -180,7 +172,10 @@ color: var(--title-text-color);
 .footer-auth {
     color: var(--primary-tel-mail);
 }
-
+.footer-auth:focus,
+.footer-auth:hover {
+    color: var(--accrnt-color);
+}
 
 /* portfolio.html */
 
@@ -199,6 +194,7 @@ color: var(--title-text-color);
     background: var(--two-background-color);
     border: none;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .buttons:hover,
