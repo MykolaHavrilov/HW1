@@ -1,6 +1,147 @@
 
-
-.body {
-    font-family: 'Raleway', sans-serif;
-    font-family: 'Roboto', sans-serif;
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accrnt-color: #2196F3;
+    --primary-background-color: #FFFFFF;
+    --two-background-color: #F5F4FA;
+    --hero-background-color: #2F303A; 
+    --primary-tel-mail: rgba(255, 255, 255, 0.6);
 }
+
+
+.list {
+    list-style: none;
+}
+
+.accent{
+    color: var(--accrnt-color)
+}
+
+
+
+/* index.html */
+
+
+/* main */
+
+.body-main {
+    background: var(--primary-background-color);
+    font-family: 'Roboto', 'Raleway', sans-serif;
+    color: var(--primary-text-color);
+}
+
+/* logo */
+
+.logo {
+    text-decoration: none;
+    font-family: 'Raleway';
+}
+
+    /* main - logo - header */
+
+.logo.header {
+    color: #000000;
+}
+
+.logo.header:hover,
+.logo.header:focus {
+    color: var(--accrnt-color);
+}
+
+    /* main - logo - footer */
+
+.logo.footer {
+    color: var(--primary-background-color);
+}
+
+.ligo.footer:hover,
+.logo.footer:focus {
+    color: var(--accrnt-color);
+}
+
+/* main - header */
+
+.site-nav .link {
+    color: var(--title-text-color);
+}
+
+.site-nav .link.current {
+    color: var(--accrnt-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--accrnt-color);
+}
+
+.auth-nav .link {
+    color: var(--primary-text-color);
+}
+
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+    color: var(--accrnt-color);
+}
+
+
+/* hero */
+
+.hero {
+background: var(--hero-background-color);
+}
+
+.hero-title {
+    color: var(--primary-background-color);
+}
+
+/* all   section */
+
+.section {
+    color: var(--primary-text-color);
+}
+
+.section-title {
+    color: var(--title-text-color);
+} 
+
+/* Особенности */
+
+.Peculiarities .title{
+    color: var(--title-text-color);
+}
+
+/* Наша команда */
+
+.section-team {
+    background: var(--two-background-color);
+}
+
+.our-team .title{
+color: var(--title-text-color);
+}
+
+/* footer */
+
+.footer {
+    background: var(--hero-background-color);
+    color: var(--primary-background-color);
+}
+.footer-auth {
+    color: var(--primary-tel-mail);
+}
+
+
+/* portfolio.html */
+
+
+/* main */
+
+    /* portfolio button */
+    
+.button
+    
+    /* portfolio galery */
+.section .portfolio-title {
+    color: var(--primary-background-color);
+}
+
