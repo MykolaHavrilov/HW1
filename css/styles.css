@@ -20,9 +20,7 @@
 }
 
 
-
 /* index.html */
-
 
 /* main */
 
@@ -187,8 +185,8 @@
     color: var(--accrnt-color);
 }
 
-/* portfolio.html */
 
+/* portfolio.html */
 
 /* main */
 
@@ -226,8 +224,6 @@
 }
 
 .scroll {
-
-
     color: var(--primary-text-color);
 }
 
