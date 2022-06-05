@@ -63,6 +63,7 @@
 
 .site-nav .link {
     text-decoration: none;
+    font-weight: 500;
 
     color: var(--title-text-color);
 }
@@ -191,6 +192,7 @@
 }
 
 .adress {
+    font-weight: 400;
     font-style: normal;
 }
 
@@ -237,6 +239,13 @@
 
 .scroll a {
     text-decoration: none;
+}
+
+.scroll p {
+    color: var(--primary-text-color);
+
+    font-size: 16px;
+    line-height: 1.88;
 }
 
 .scroll.title {
