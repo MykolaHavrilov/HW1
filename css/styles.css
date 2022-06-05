@@ -229,10 +229,6 @@
 
     /* portfolio galery */
 
-.section .portfolio-title {
-    color: var(--primary-background-color);
-}
-
 .scroll {
     color: var(--primary-text-color);
 }
