@@ -11,22 +11,19 @@
 }
 
 
-.list {
-    list-style: none;
-}
-
-.accent{
-    color: var(--accrnt-color)
-}
-
 
 /* index.html */
 
-/* main */
+
 
 .body-main {
     background: var(--primary-background-color);
     color: var(--primary-text-color);
+
+    width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0px;
 
     font-family: Roboto, sans-serif;
     font-weight: 400;
@@ -35,7 +32,31 @@
     letter-spacing: 0.03em;
 }
 
-/* logo */
+/* Утиилиты */
+
+.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.accent {
+    color: var(--accrnt-color)
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1170px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    outline: 2px solid green;
+}
+
+
+/* main */
+
+    /* logo */
 
 .logo {
     text-decoration: none;
@@ -58,10 +79,33 @@
 }
 
 /* main - header */
+.page-header {
+    height: 80px;
+    left: 0px;
+    top: 0px;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+}
 
     /* site-nav */
 
+.site-nav {
+    display: flex;
+    margin-left: 70px;
+}
+
+.site-nav .item+.item {
+    margin-left: 50px;
+}
+
 .site-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     text-decoration: none;
     font-weight: 500;
 
@@ -77,6 +121,15 @@
 }
 
     /* auth-nav */
+
+.auth-nav {
+    display: flex;
+    margin-left: auto;
+}
+
+.auth-nav .item+.item {
+    margin-left: 50px;
+}
 
 .auth-nav a {
     text-decoration: none;
@@ -95,25 +148,44 @@
 }
 
 
+
 /* hero */
 
 .hero {
     background: var(--hero-background-color);
 
+    margin-top: 0px;
+    height: 600px;
+    left: 0px;
     text-align: center;
 }
 
 .hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    padding-top: 200px;
+    padding-bottom: 30px;
+
     color: var(--primary-background-color);
 }
 
 /* кнопка основного меню button */
 
 .button {
+    width: 200px;
+    height: 50px;
+    margin-bottom: 200px;
+
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
+
 
     color: var(--primary-background-color);
     background: var(--accrnt-color);
@@ -139,7 +211,8 @@
     color: var(--primary-text-color);
 }
 
-.section-title {
+.section-title,
+.section-title-centered {
     color: var(--title-text-color);
 
     font-weight: 700;
@@ -150,7 +223,7 @@
 
 /* Особенности */
 
-.Peculiarities .title{
+.peculiarities .title{
     color: var(--title-text-color);
 
     font-weight: 700;
@@ -159,16 +232,76 @@
     text-transform: uppercase;
 }
 
+.peculiarities {
+    display: flex;
+    flex-wrap: wrap;
+}
+.peculiarities .item{
+    width: 270px;
+    margin-top: 94px;
+    margin-bottom: 94px;
+}
+.peculiarities .item+.item {
+    margin-left: 30px;
+}
+.peculiarities > .title {
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+
+/* Чем мы занимаемся */
+.whatarewedoing {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.whatarewedoing .item {
+    width: 370px;
+    margin-bottom: 94px;
+}
+
+.whatarewedoing .item+.item {
+    margin-left: 30px;
+}
+.container>.section-title.centered {
+    padding-top: 94px;
+    margin-top: -94px;
+    margin-bottom: 50px;
+}
+
 /* Наша команда */
 
 .section-team {
     background: var(--two-background-color);
 }
 
-.our-team.cards {
-    text-align: center;
+.section-team>.container {
+    margin-top: -94px;
 }
 
+.our-team {
+    text-align: center;
+    display: flex;
+}
+
+.section-title-centered {
+    padding-top: 94px;
+    margin-top: 94px;
+    margin-bottom: 50px;
+}
+
+.cards {
+    width: 270px;
+    height: 368px;
+
+    background-color: var(--primary-background-color);
+}
+
+.our-team .item+.item {
+    margin-left: 30px;
+    margin-bottom: 94px;
+}
 
 .our-team .title,
 .our-team p {
@@ -195,6 +328,32 @@
     font-weight: 400;
     font-style: normal;
 }
+
+.footer-cards {
+    display: flex;
+}
+
+.footer>.container {
+    height: 252px;
+}
+
+.container>.logo.footer{
+    display: block;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+.foot-item>.item>p{
+    margin-bottom: 9px;
+    margin-top: 0px;
+}
+
+.foot-item .item+.item {
+    display: block;
+    padding-top: 0px;
+    padding-bottom: 9px;
+}
+
 
 /* portfolio.html */
 
@@ -263,3 +422,8 @@
     width: 1px !important;
     overflow: hidden;
 }
+
+
+
+
+
